@@ -15,20 +15,20 @@ jobs:
       matrix:
         # Replace the following with the keyboard you want to setup.  
         # Only 1 keyboard is supported.  For more keyboards, copy and rename this file.
-        keyboard: ['4x4Tutorials']
+        keyboard: ['PlanckBLE']
         # Keymap of the keyboard to setup.  Multiple keymaps can be setup following this example: ['default','jpconstantineau']
-        keymap: ['base']
+        keymap: ['default']
         # keyboard configuration. Multiple configs can be setup following this example: ['left','right']
         keyboard_config: ['single']
         # hardware configuration. must have both components of the path in the BlueMicro_BLE keyboard examples path
-        hardware_config: ['4x4Backpack']
+        hardware_config: ['nice_nano']
         # Available options
         # feather52832 - use this for most nRF52832 based boards (needs Arduino_nRF52_Bootloader)
         # bluemicro_nrf52840
         # bluemacro_nrf52840
         # nice_nano
         # pca10056 - use this for all other nRF52840 based boards not listed above (needs Arduino_nRF52_Bootloader)
-        compile_with: ['4x4macropad_nrf52832']
+        compile_with: ['Planck_nice_nano']
 
     # you shouldn't need to edit anything below
     steps:
